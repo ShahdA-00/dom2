@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <section class="container px-4 mx-auto py-6">
+      <div class=" layer bg-black/40 fixed flex items-center z-1 top-0 left-0 min-h-screen w-full opacity-0 pointer-events-none ">
+        <div  class="close bg-white w-10  h-10 rounded-full flex items-center justify-center absolute top-8 right-8 cursor-pointer" onclick="remove()">X</div>
+        <div class="arrows flex  absolute  w-full justify-between">
+          <div
+            class="arrows-left w-16 h-16 rounded-full mx-6 bg-white flex items-center justify-center"onclick="perv()"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              class="bi bi-arrow-left-short"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"
+              />
+            </svg>
+          </div>
+          <div
+            class="arrows-right w-16 h-16 rounded-full mx-6 bg-white flex items-center justify-center"onclick="nextbutton()"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              class="bi bi-arrow-right-short"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+              />
+            </svg>
+          </div>
+        </div>
+         
+        <div class="imges w-auto h-150 overflow-hidden rounded-2xl mx-auto">
+            <img src="" alt="" class="w-full h-full object-contain">
+        </div>
+      </div>
+      <div class="product-header text-center">
+        <h3 class="font-semibold text-xl mt-8">Products</h3>
+        <p class="text-gray-400 my-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          reiciendis quas omnis a tempore?
+        </p>
+      </div>
+
+      <div
+        class="product-cards my-20 grid md:grid-cols-2 md:gap-10 lg:grid-cols-3 lg:gap-12 grid-cols-1 gap-4"
+      ></div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
